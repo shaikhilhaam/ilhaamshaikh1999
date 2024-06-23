@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    background: url('header-bg.jpg') no-repeat center center/cover;
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header .container {
+    position: relative;
+    z-index: 1;
+}
+
+.header h1, .header p {
+    animation: fadeInDown 2s;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    font-weight: bold;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+}
